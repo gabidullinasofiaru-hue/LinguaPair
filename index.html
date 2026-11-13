@@ -214,6 +214,54 @@ body{background:#f2e9e0;color:var(--ink);font-family:Inter,"Avenir Next",Arial,s
 @media(max-width:760px){.app{padding:0 15px 24px}.side{position:relative;min-height:auto;display:block;padding:15px 0 12px}.brand{font-size:28px;margin-bottom:13px}.brand small{display:block;border:0;margin:7px 0 0;padding:0;font-size:13px}.nav{justify-content:flex-start;overflow-x:auto;gap:6px;padding-bottom:3px}.nav button{font-size:14px;padding:9px 13px}.hero{grid-template-columns:1fr;gap:0;padding:28px 0 0;min-height:0}.hero-copy{padding:0 8px}.hero h1{font-size:clamp(58px,13vw,86px);letter-spacing:-3px;margin:18px 0}.hero p{font-size:18px;max-width:400px}.hero-art{min-height:310px;margin-top:4px;padding-left:10%}.landmark-photo{height:310px}.landmark-photo.fr-photo img{height:320px}.landmark-photo.uk-photo img{height:270px}.word-day{grid-template-columns:1fr;padding:22px}.stats,#home .stats{grid-template-columns:1fr 1fr}.head h2{font-size:31px}.grid3,.split{grid-template-columns:1fr}.feature{min-height:0}.page-panel{padding:22px}.page-panel h2{font-size:38px}.page-panel>p{font-size:16px}.lesson-grid{grid-template-columns:1fr 1fr}.exercise-layout{grid-template-columns:1fr}.exercise-types{display:flex;overflow-x:auto}.exercise-types button{white-space:nowrap}.lesson-detail .two-col,.resource-grid,.reading-story{grid-template-columns:1fr}.resource{padding:18px}.resource-section-title h3{font-size:25px}}
 @media(max-width:460px){.lesson-grid{grid-template-columns:1fr}.stats,#home .stats{grid-template-columns:1fr 1fr}.hero h1{font-size:58px}.hero-art{min-height:255px}.landmark-photo{height:255px}.landmark-photo.fr-photo img{height:265px}.landmark-photo.uk-photo img{height:225px}.wd-lang b{font-size:21px}.word-day h2{font-size:36px}}
 
+
+/* Reference-inspired course plan and false-friends cards */
+.home-showcase{grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}
+.course-plan-card,.false-friends-card{position:relative;overflow:hidden;padding:30px 32px;border-radius:26px;background:#fbf4ec;border:1px solid #e9ddd1;box-shadow:0 12px 34px rgba(76,42,34,.055)}
+.course-plan-card .eyebrow,.false-friends-card .eyebrow{font-size:13px;letter-spacing:1.8px;color:#6f2926;font-weight:800}
+.course-plan-card>h3,.false-friends-card>h3{font:normal clamp(34px,3vw,45px)/1.08 Georgia,serif;letter-spacing:-.8px;color:#171313;margin:22px 0 24px}
+.course-plan-card .lesson-row{align-items:flex-start;padding:22px 0;border-bottom:1px solid #d9cabe;gap:14px}
+.course-plan-card .lesson-title{font: bold 25px/1.12 Georgia,serif;color:#201a18;max-width:75%}
+.course-plan-card .lesson-sub{font-size:16px;line-height:1.45;color:#746b66;margin-top:10px;max-width:500px}
+.course-plan-card .pill{background:#f0e1d5;color:#302521;border-radius:99px;padding:10px 16px;font-size:16px}
+.course-plan-button,.false-friends-button{background:#74231f!important;border-color:#74231f!important;color:#fff!important;border-radius:999px!important;padding:16px 30px!important;font-size:18px!important;min-width:220px;margin-top:18px}
+.course-plan-button span,.false-friends-button span{margin-left:12px;font-size:22px}
+.false-friends-card:after{content:"";position:absolute;right:0;top:0;width:88px;height:160px;background:#762522;clip-path:polygon(100% 0,100% 100%,0 0);opacity:.95}
+.false-friends-card .eyebrow,.false-friends-card>h3,.false-friends-card .compare,.false-friends-card>p,.false-friends-card button{position:relative;z-index:1}
+.false-friends-card>h3{max-width:540px;margin-bottom:22px}
+.false-friends-card .compare{gap:10px;margin:0 0 18px}
+.false-friends-card .lang{background:transparent;border:1px solid #d8c9bd;border-radius:19px;padding:18px 20px;min-width:0}
+.false-friends-card .lang small{font-size:12px;letter-spacing:.7px;color:#302925;margin-bottom:9px}
+.false-friends-card .lang b{font:normal clamp(25px,2.4vw,34px)/1.1 Georgia,serif;color:#1c1715;overflow-wrap:anywhere}
+.false-friends-card .lang .muted{font-size:16px;line-height:1.4;margin-top:8px;color:#6e625d}
+.false-friends-card>p{font-size:16px;line-height:1.5;color:#625954;max-width:540px;margin:0 0 6px}
+@media(max-width:760px){
+ .home-showcase{grid-template-columns:1fr;gap:18px}
+ .course-plan-card,.false-friends-card{padding:28px 25px;border-radius:27px}
+ .course-plan-card .eyebrow,.false-friends-card .eyebrow{font-size:13px;letter-spacing:1.7px}
+ .course-plan-card>h3,.false-friends-card>h3{font-size:clamp(37px,9vw,47px);line-height:1.05;margin:23px 0 24px}
+ .course-plan-card .lesson-row{padding:23px 0;gap:10px}
+ .course-plan-card .lesson-title{font-size:25px;max-width:calc(100% - 108px)}
+ .course-plan-card .lesson-sub{font-size:16px;line-height:1.45;margin-top:10px}
+ .course-plan-card .pill{font-size:16px;padding:10px 14px}
+ .course-plan-button,.false-friends-button{font-size:18px!important;padding:16px 28px!important;min-width:210px;margin-top:20px}
+ .false-friends-card:after{width:86px;height:155px}
+ .false-friends-card .compare{grid-template-columns:1fr 1fr;gap:8px}
+ .false-friends-card .lang{padding:16px 13px;border-radius:18px}
+ .false-friends-card .lang small{font-size:11px}
+ .false-friends-card .lang b{font-size:clamp(23px,6vw,31px)}
+ .false-friends-card .lang .muted{font-size:15px;line-height:1.35}
+ .false-friends-card>p{font-size:16px;line-height:1.45;margin-top:18px}
+}
+@media(max-width:390px){
+ .course-plan-card,.false-friends-card{padding:25px 20px}
+ .course-plan-card .lesson-title{font-size:23px;max-width:calc(100% - 96px)}
+ .course-plan-card .pill{font-size:14px;padding:9px 11px}
+ .false-friends-card .lang{padding:14px 10px}
+ .false-friends-card .lang b{font-size:22px}
+ .false-friends-card .lang .muted{font-size:14px}
+}
+
 </style></head>
 <body><div class="app">
 <aside class="side"><div class="brand">LinguaPair<small>French through English</small></div><nav class="nav"><button class="active" data-view="home"><i>⌂</i>Home</button><button data-view="lessons"><i>▤</i>Lessons</button><button data-view="vocabulary"><i>Aa</i>Dictionary</button><button data-view="practice"><i>✎</i>Practice</button><button data-view="reading"><i>▧</i>Media</button><button data-view="progress"><i>▥</i>Progress</button><button data-view="theory"><i>▧</i>Theory</button></nav><div class="side-bottom">Изучай французский через английский.<b>Сравнивай. Понимай. Запоминай.</b></div></aside>
@@ -240,7 +288,7 @@ body{background:#f2e9e0;color:var(--ink);font-family:Inter,"Avenir Next",Arial,s
 </article>
 <div class="stats"><div class="panel stat"><small>Уроки</small><strong>12</strong><em>4 учебных модуля</em></div><div class="panel stat"><small>Метод</small><strong>EN ↔ FR</strong><em>Сравнение двух языков</em></div></div>
 <div class="head"><div><h2>Как это работает?</h2><p>Сравнивай английский и французский, чтобы быстрее замечать закономерности.</p></div></div><div class="grid3"><article class="panel feature blue"><div class="symbol">⚖</div><h3>Сравнивай</h3><p>Сравнивай слова и фразы в двух языках.</p></article><article class="panel feature red"><div class="symbol">⌕</div><h3>Замечай различия</h3><p>Замечай различия в значениях, грамматике и произношении.</p></article><article class="panel feature green"><div class="symbol">✦</div><h3>Переноси знания</h3><p>Опирайся на английский, чтобы легче понимать французский.</p></article></div>
-<div class="split"><div class="panel box"><div class="eyebrow">Твой учебный маршрут</div><h3>12 тем · 4 модуля · один путь</h3><div id="homeModules"></div><button class="btn secondary" onclick="showView('lessons')">Все уроки →</button></div><div class="panel box"><div class="eyebrow">Практика · Vocabulary traps</div><h3>Ложные друзья переводчика</h3><div class="compare"><div class="lang"><small>ENGLISH</small><b>actually</b><div class="muted">на самом деле</div></div><div class="lang"><small>FRANÇAIS</small><b>actuellement</b><div class="muted">в настоящее время</div></div></div><p>Похожие слова могут иметь разные значения. Проверь себя на примерах.</p><button class="small-btn" onclick="showView('practice');selectExercise(0)">К практике →</button></div></div>
+<div class="split home-showcase"><div class="panel box course-plan-card"><div class="eyebrow">Твой учебный план</div><h3>12 тем · 4 модуля · один путь</h3><div id="homeModules"></div><button class="btn primary course-plan-button" onclick="showView('lessons')">Все уроки <span aria-hidden="true">→</span></button></div><div class="panel box false-friends-card"><div class="eyebrow">Практика · Vocabulary traps</div><h3>Ложные друзья переводчика</h3><div class="compare"><div class="lang"><small>ENGLISH</small><b>actually</b><div class="muted">на самом деле</div></div><div class="lang"><small>FRANÇAIS</small><b>actuellement</b><div class="muted">в настоящее время</div></div></div><p>Похожие слова могут иметь разные значения. Проверь себя на примерах.</p><button class="btn primary false-friends-button" onclick="showView('practice');selectExercise(0)">К практике <span aria-hidden="true">→</span></button></div></div>
 </section>
 <section class="view" id="lessons"><div class="panel page-panel"><div class="eyebrow">Учебная программа · A0–A2</div><h2>Уроки</h2><p>Начни с A0, затем пройди тематическую программу A1. После неё откроется следующий маршрут A2.</p><article class="panel zero-lesson-card"><div class="zero-number">00</div><div class="zero-copy"><div class="eyebrow">Перед началом · French foundations</div><h3>Основы французского</h3><p>Алфавит, чтение, произношение, первые фразы и базовые слова. Подготовь фундамент перед тематическими уроками A1.</p><span class="zero-meta">Алфавит · Произношение · Первые слова · A0</span></div><button class="btn primary" onclick="showView('frenchbase')">Начать урок 00 →</button></article><div id="allModules"></div><div class="module"><div class="eyebrow">Следующий этап · A2</div><h3>Маршрут A2 · Survie</h3><p class="module-intro">Продолжение после завершения A1. Темы будут открываться последовательно.</p><div class="lesson-grid">
 <article class="lesson-card"><h4>13 · Travel & Booking</h4><p>Отели, билеты, поездки и Futur simple.</p></article><article class="lesson-card"><h4>14 · Past Experiences</h4><p>Истории и воспоминания: Passé composé и Imparfait.</p></article><article class="lesson-card"><h4>15 · Health & Home</h4><p>Здоровье, симптомы, жильё и местоимения-дополнения.</p></article><article class="lesson-card"><h4>16 · Around the City</h4><p>Маршруты, инструкции и Impératif.</p></article><article class="lesson-card"><h4>17 · Opinions & Comparisons</h4><p>Сравнения, эмоции, согласие и несогласие.</p></article><article class="lesson-card"><h4>18 · Everyday Requests</h4><p>Вежливые просьбы, Conditionnel présent, y и en.</p></article>
